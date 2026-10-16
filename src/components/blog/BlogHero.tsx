@@ -208,11 +208,11 @@ export default function BlogHero({ featuredPosts }: { featuredPosts: FeaturedPos
 
           {/* Typography Collage */}
           <div className="flex flex-col gap-0 items-center justify-center mt-10 w-full relative z-20 pointer-events-none">
-            <h2 ref={text1Ref} className="font-epilogue text-[clamp(4.5rem,18vw,14rem)] leading-[0.8] font-black uppercase tracking-tighter text-[#1C3B5E] -rotate-1 mix-blend-multiply opacity-90 will-change-transform z-30">
+            <h2 ref={text1Ref} className="font-epilogue text-[clamp(4rem,16vw,12rem)] leading-[0.8] font-black uppercase tracking-tighter text-[#1C3B5E] -rotate-1 mix-blend-multiply opacity-90 will-change-transform z-10">
               Histoires
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 -mt-4 md:-mt-8 z-10 w-full relative">
-              <h2 ref={text2Ref} className="font-epilogue text-[clamp(3.5rem,14vw,10rem)] leading-[0.8] font-black uppercase tracking-tighter text-on-surface rotate-2 will-change-transform">
+              <h2 ref={text2Ref} className="font-epilogue text-[clamp(3rem,12vw,9rem)] leading-[0.8] font-black uppercase tracking-tighter text-on-surface rotate-2 will-change-transform">
                 De
               </h2>
               {/* Floating Badge */}
@@ -220,7 +220,7 @@ export default function BlogHero({ featuredPosts }: { featuredPosts: FeaturedPos
                 <span className="font-bold text-sm md:text-lg leading-none">FJ</span>
                 <span className="text-[10px] md:text-xs opacity-80 mt-1">Niger Blog</span>
               </div>
-              <h2 ref={text3Ref} className="font-epilogue text-[clamp(5rem,20vw,16rem)] leading-[0.8] font-black uppercase tracking-tighter text-[#FF7F3F] -rotate-2 mix-blend-multiply will-change-transform">
+              <h2 ref={text3Ref} className="font-epilogue text-[clamp(4.5rem,18vw,14rem)] leading-[0.8] font-black uppercase tracking-tighter text-[#FF7F3F] -rotate-2 mix-blend-multiply will-change-transform">
                 Joie
               </h2>
             </div>
@@ -233,7 +233,7 @@ export default function BlogHero({ featuredPosts }: { featuredPosts: FeaturedPos
             <Link
               href={`/blog/${mainPost.slug}`}
               ref={fragMainRef}
-              className="absolute group z-10 top-[40%] md:top-[30%] -right-4 md:right-[5%] lg:right-[15%] w-64 md:w-[450px] aspect-[4/5] md:aspect-video bg-surface-container-lowest shadow-2xl p-3 md:p-5 -rotate-2 will-change-transform cursor-pointer hover:-translate-y-2 transition-transform duration-500"
+              className="absolute group z-30 top-[40%] md:top-[30%] -right-4 md:right-[5%] lg:right-[15%] w-64 md:w-[450px] aspect-[4/5] md:aspect-video bg-surface-container-lowest shadow-2xl p-3 md:p-5 -rotate-2 will-change-transform cursor-pointer hover:-translate-y-2 transition-transform duration-500"
             >
               <div className="relative w-full h-full overflow-hidden">
                 {mainPost.coverImage ? (
