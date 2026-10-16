@@ -1,0 +1,32 @@
+import { betterAuth } from 'better-auth';
+import { prismaAdapter } from 'better-auth/adapters/prisma';
+import prisma from './db';
+
+export const auth = betterAuth({
+  database: prismaAdapter(prisma, {
+    provider: 'sqlite',
+  }),
+  emailAndPassword: {
+    enabled: true,
+  },
+  session: {
+    expiresIn: 60 * 60 * 24 * 7, // 7 days
+    updateAge: 60 * 60 * 24, // 1 day — refresh session if older
+    cookieCache: {
+      enabled: true,
+      maxAge: 60 * 5, // 5 min cache
+    },
+  },
+  user: {
+    additionalFields: {
+      role: {
+        type: 'string',
+        required: false,
+        defaultValue: 'editor',
+        input: false,
+      },
+    },
+  },
+});
+
+export type Session = typeof auth.$Infer.Session;

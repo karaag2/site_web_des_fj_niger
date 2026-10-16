@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Les Fabricants de Joie | Site of the Year</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Inter:wght@300;400;500&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#84f6dd",
+                    "inverse-surface": "#2d3133",
+                    "on-primary-fixed": "#351000",
+                    "tertiary-fixed-dim": "#66dac1",
+                    "on-surface": "#191c1e",
+                    "surface-container-high": "#e6e8ea",
+                    "outline": "#8b7267",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed": "#00201a",
+                    "surface-container-highest": "#e0e3e5",
+                    "tertiary": "#006b5b",
+                    "outline-variant": "#dfc0b4",
+                    "tertiary-container": "#3db69f",
+                    "secondary": "#436085",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#004238",
+                    "surface-dim": "#d8dadc",
+                    "surface-tint": "#a23f00",
+                    "inverse-primary": "#ffb595",
+                    "surface-variant": "#e0e3e5",
+                    "surface": "#f8f9fb",
+                    "error": "#ba1a1a",
+                    "primary-container": "#ff7f3f",
+                    "on-primary-container": "#662500",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#574239",
+                    "on-secondary-container": "#3e5b80",
+                    "on-primary-fixed-variant": "#7c2e00",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#2a486c",
+                    "on-tertiary-fixed-variant": "#005144",
+                    "on-secondary-fixed": "#001c38",
+                    "secondary-container": "#b6d4ff",
+                    "secondary-fixed": "#d3e4ff",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-bright": "#f8f9fb",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#ffb595",
+                    "surface-container": "#eceef0",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#a23f00",
+                    "primary-fixed": "#ffdbcd",
+                    "on-background": "#191c1e",
+                    "secondary-fixed-dim": "#abc8f3",
+                    "background": "#f8f9fb",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Space Grotesk", "sans-serif"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-epilogue { font-family: 'Epilogue', sans-serif; }
+        .font-space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        
+        .kinetic-text {
+            text-shadow: 10px 10px 0px rgba(162, 63, 0, 0.1);
+        }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(40px);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- SIDE NAVIGATION (Shared Component Implementation) -->
+<nav class="fixed left-0 top-0 h-full z-[100] flex flex-col justify-between py-12 px-4 bg-white/40 dark:bg-black/60 backdrop-blur-2xl w-20 hover:w-64 transition-all duration-700 ease-out border-r-0 shadow-[40px_0_80px_rgba(25,28,30,0.06)] group">
+<div class="flex flex-col items-center group-hover:items-start transition-all">
+<div class="text-xl font-black font-epilogue text-orange-700 dark:text-orange-500 mb-12 uppercase tracking-tighter">
+                LF
+                <span class="hidden group-hover:inline opacity-0 group-hover:opacity-100 transition-opacity duration-500 ml-1">Les Fabricants</span>
+</div>
+<div class="flex flex-col gap-10">
+<!-- Accueil Active -->
+<a class="flex items-center gap-4 text-orange-700 dark:text-orange-500 font-black scale-110 translate-x-2 transition-transform duration-500" href="#">
+<span class="material-symbols-outlined" data-icon="blur_on">blur_on</span>
+<span class="hidden group-hover:block font-space-grotesk text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Accueil</span>
+</a>
+<a class="flex items-center gap-4 text-slate-400 dark:text-slate-600 grayscale hover:grayscale-0 hover:bg-slate-200/20 dark:hover:bg-slate-800/40 transition-all duration-500 p-1" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome_motion">auto_awesome_motion</span>
+<span class="hidden group-hover:block font-space-grotesk text-xs uppercase tracking-widest">Lookbook</span>
+</a>
+<a class="flex items-center gap-4 text-slate-400 dark:text-slate-600 grayscale hover:grayscale-0 hover:bg-slate-200/20 dark:hover:bg-slate-800/40 transition-all duration-500 p-1" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="hidden group-hover:block font-space-grotesk text-xs uppercase tracking-widest">Histoires</span>
+</a>
+<a class="flex items-center gap-4 text-slate-400 dark:text-slate-600 grayscale hover:grayscale-0 hover:bg-slate-200/20 dark:hover:bg-slate-800/40 transition-all duration-500 p-1" href="#">
+<span class="material-symbols-outlined" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="hidden group-hover:block font-space-grotesk text-xs uppercase tracking-widest">Soutenir</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col items-center group-hover:items-start gap-4">
+<div class="w-10 h-10 bg-surface-container-highest overflow-hidden rounded-full border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling Nigerien elder with traditional headwear, soft warm lighting, cinematic photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsd5vomKex6R1Q7yM70x1LBYettXXoyTQovft9Owcf55f9fbKGE963V_T6bdayJYD3dFMYKd5ezlb-pR7WzELxBZ7ieI4DJ4cuAYtQWfwj0XSK-yj93-9y79Jbwadez1RwXjKeWjDypHVsipPN_C3wPzEEAOePbAgJgbB2BUuyLJGPHBTXNfyyA7qvCHC729-Jb1F0zXu9f6vNhdEooXhAbjuEtNS3wkxmlDW8hYb87n57iiHVYp6iYzhA2kReGTysa4JkP4lkOT5_"/>
+</div>
+<button class="hidden group-hover:block px-4 py-2 bg-primary text-on-primary font-space-grotesk text-[10px] uppercase tracking-widest font-bold">Contactez-Nous</button>
+</div>
+</nav>
+<!-- TOP NAVIGATION (Shared Component Implementation) -->
+<header class="flex justify-between items-center w-full px-12 py-8 absolute top-0 z-50 bg-transparent">
+<h1 class="text-3xl font-black font-epilogue tracking-tighter text-orange-700 dark:text-orange-500">Les Fabricants de Joie</h1>
+<div class="hidden md:flex gap-12 items-center">
+<nav class="flex gap-8">
+<a class="text-orange-700 dark:text-orange-500 border-b-4 border-orange-700 font-epilogue font-bold text-sm uppercase tracking-wider transition-all duration-500 cubic-bezier(0.23, 1, 0.32, 1) scale-105" href="#">Le Manifeste</a>
+<a class="text-slate-900 dark:text-slate-100 opacity-60 hover:opacity-100 hover:-translate-y-1 transition-all duration-500 font-epilogue font-bold text-sm uppercase tracking-wider" href="#">Missions</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-orange-700" data-icon="language">language</span>
+<button class="bg-primary text-on-primary px-6 py-2 font-epilogue font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform">Soutenir</button>
+</div>
+</div>
+</header>
+<main class="pl-20">
+<!-- HERO SECTION: THE KINETIC COLLAGE -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden py-40">
+<div class="absolute inset-0 z-0">
+<!-- Background Geometric Installation -->
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-tertiary-container/20 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[120px]"></div>
+</div>
+<div class="container relative z-10 mx-auto px-4">
+<div class="relative">
+<!-- Title as Physical Blocks -->
+<div class="flex flex-col gap-0 items-center justify-center">
+<h2 class="font-epilogue text-[12vw] leading-[0.8] font-black uppercase tracking-tighter text-primary -rotate-2 mix-blend-multiply opacity-90 kinetic-text">
+                            Réveillez
+                        </h2>
+<div class="flex items-end gap-8 -mt-4">
+<h2 class="font-epilogue text-[12vw] leading-[0.8] font-black uppercase tracking-tighter text-on-surface rotate-1 kinetic-text">
+                                La
+                            </h2>
+<!-- Floating Badge -->
+<div class="mb-12 w-32 h-32 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container font-epilogue font-bold text-center leading-tight rotate-12 shadow-xl p-4">
+                                Niger <br/> 2024
+                            </div>
+</div>
+<h2 class="font-epilogue text-[15vw] leading-[0.8] font-black uppercase tracking-tighter text-secondary -rotate-1 mix-blend-darken kinetic-text">
+                            Joie
+                        </h2>
+</div>
+<!-- Overlapping Elements Collage -->
+<div class="absolute -top-10 right-[10%] w-64 h-80 bg-surface-container-lowest shadow-2xl p-4 rotate-6 z-20">
+<img class="w-full h-full object-cover" data-alt="Close-up of a joyful Nigerien child laughing, warm sunset light, vibrant colors, shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd1tFH31gA11h2IejAf9CMP329NQOXhQ2cIZAjNZt1fidzBxrvKDJ7bhHoJ0F-9p-PHGGvJoyG2rgXDK51C1tze2bi1jzDH5rJbRkFWe4n0zSWGPO3NfFR6KBUgtL4VH2r-PzSKC9bKd8jeODSBMN7JumIC_6us_xAf5T21JJp3wZzmNzztUMlCAFQ6B_fEKXISQFrjRmIS75W3o9w3ZNvnArfXXxscfqTItGFFxe8Z1RqRkBiDzCImW2urQAw_deMHvr73-uIT7uK"/>
+<div class="absolute -bottom-4 -left-4 bg-tertiary p-2 text-white font-space-grotesk text-[8px] uppercase tracking-widest">Fragment #01</div>
+</div>
+<div class="absolute top-[40%] -left-[5%] w-72 h-72 rounded-full overflow-hidden border-8 border-surface-container-low shadow-2xl -rotate-12 z-20">
+<img class="w-full h-full object-cover" data-alt="Vibrant market scene in Niamey, Niger, colorful textiles, morning sunlight, bustling atmosphere, cinematic composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY7i04ztikYUZ6LlezFzpE5KoVSPI07KqRDgBcrXM3Gpg4xVqsKx9NE5VNpIDKXlwR3w-BKwi-Lwmn4PpFIjymIvE-pQLwU4gCt-TRJylAQCWu3obeSnKWFXl2AWqtL8cbqNIOgyUbRWhjo07FSH9amlDAe3PupW_t7F9-xlRINGRJFvggTg7gjPh8_PAQUBuEd2aGcJqKAFSXB3hLj_EW4OW0XPW8m8cdKPB6OBIA-IHS9LxSxTyOsTNkLzOoLGcEnHxsRzQy-qp7"/>
+</div>
+<!-- 3D Ribbons -->
+<div class="absolute top-1/2 left-0 w-full h-24 bg-primary-container -rotate-6 mix-blend-overlay z-0 opacity-40 blur-sm"></div>
+<div class="absolute top-1/3 left-1/2 w-32 h-screen bg-tertiary-container/30 rotate-[35deg] z-0 pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- LOOKBOOK SECTION (Horizontal Narrative) -->
+<section class="py-32 bg-surface-container-low">
+<div class="container mx-auto px-12 mb-20">
+<span class="font-space-grotesk text-primary font-bold uppercase tracking-widest text-sm">Le Lookbook des Missions</span>
+<h3 class="font-epilogue text-7xl font-black tracking-tighter mt-4 max-w-2xl">L'action par le mouvement.</h3>
+</div>
+<div class="flex overflow-x-auto gap-12 px-12 pb-20 no-scrollbar">
+<!-- Enfants -->
+<div class="flex-shrink-0 w-[600px] relative group">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Art workshop for children in Niger, messy paint, bright colors, focused joyful faces, sun-drenched indoor space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCikRU9SBboy04OgHTzo0NoFI9ySQqbC8wSD0r6RxYAE0WfXAJkNi7wVQHTUaprpkRfKTj9uCQGgE6QeA82iOihrslHPSG_T1p09rMZYvmSAgaGbLt8CaveEJzdjrtGTNW4u47emvo9iU-2DDyRimEtnCUS1WOgDeHuiZNzmAEvEakOZ_bd48DXyvhjeab40jbZ6wTFfOfxITOETUWXK2r7E9sF67UP2f1VdqQbV3eGXcXSaBbXN6Jywege3t04vKsE7XlvUh5ZNJjv"/>
+</div>
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-primary-container text-on-primary-container flex items-center justify-center rounded-full font-epilogue font-black text-2xl rotate-12 transition-transform group-hover:rotate-0 duration-500">
+                        Enfants
+                    </div>
+<div class="mt-8">
+<h4 class="font-epilogue text-4xl font-bold uppercase">Éducation &amp; Éveil</h4>
+<p class="font-body text-on-surface-variant max-w-md mt-4 leading-relaxed">Cultiver l'imaginaire à travers des ateliers d'art et des espaces de jeux cinétiques au cœur du Niger.</p>
+</div>
+</div>
+<!-- Familles -->
+<div class="flex-shrink-0 w-[600px] relative group translate-y-24">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Community gathering under a large acacia tree, warm communal atmosphere, people talking and laughing, afternoon shade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbXTNY4CLFcP6qk61PBP4TdhT6Jesw5EVbQYacp7NkAVvWLHyFabvZIqtheRV_nkke11Z4NsC1-gtudZGBI93eN6y5QEuIc_cZKoSfxYH5w6mhD6o_OtTP5z2fMLtmSc6-uZm1VAOt2SpuhEvsyjBwgXoEpOHkwoC3tUtTx1Sz4KglyB8Kzs26QESL1Oegipmrd5hCESz-bgQ7Y8gvdqb7qAhOA9HfNjnBjb8bHhnyRIlZp8ktqdfVAM43DxwNJB2VF98EucRnWUhE"/>
+</div>
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-secondary text-on-secondary flex items-center justify-center rounded-full font-epilogue font-black text-2xl -rotate-12 transition-transform group-hover:rotate-0 duration-500">
+                        Familles
+                    </div>
+<div class="mt-8">
+<h4 class="font-epilogue text-4xl font-bold uppercase">Soutien Commun</h4>
+<p class="font-body text-on-surface-variant max-w-md mt-4 leading-relaxed">Renforcer les liens sociaux par des initiatives d'économie circulaire et de partage intergénérationnel.</p>
+</div>
+</div>
+<!-- Formations -->
+<div class="flex-shrink-0 w-[600px] relative group">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Young artisan working with copper and wood, traditional tools, modern design, sunlight hitting the metal surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAkiuF4UebvjGraYHam_cETzF6P96CEqf4xiLjFdCCnR_jeGe872BqQATxx9ngsOhhV-YiSym4B-CgCspNA5rAViDS-qojR3y-eLFpnzyQ18sPKUrwsoTRAySjbyJREdJ4l_MshQ5ZTJU1S-9t474rdYrVFeA1CFC3p-ITUXlsTmkL2GkDz14qI4ZNHpkRQ4VGMhI5IIddgutORsTjldfVKs224wnJDSlmWTBxNW5N_xw3eLJsr3cretQEPVBkpC-oY-bdd8flcsSz"/>
+</div>
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-tertiary-container text-on-tertiary-container flex items-center justify-center rounded-full font-epilogue font-black text-2xl rotate-[25deg] transition-transform group-hover:rotate-0 duration-500">
+                        Formations
+                    </div>
+<div class="mt-8">
+<h4 class="font-epilogue text-4xl font-bold uppercase">Métiers d'Avenir</h4>
+<p class="font-body text-on-surface-variant max-w-md mt-4 leading-relaxed">Transmettre les savoir-faire ancestraux combinés aux technologies numériques pour l'autonomie.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOG & STORIES: ANTI-DESIGN CHAOS -->
+<section class="py-60 relative">
+<div class="container mx-auto px-4">
+<div class="asymmetric-grid min-h-[1200px]">
+<!-- Header of section -->
+<div class="col-start-2 col-end-7">
+<h2 class="font-epilogue text-[8vw] font-black leading-none uppercase tracking-tighter text-on-surface mb-20">Histoires du Sahel</h2>
+</div>
+<!-- Asymmetrical Story Card 1 -->
+<div class="col-start-7 col-end-12 row-start-1 mt-40">
+<div class="bg-surface-container-lowest p-8 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700 cursor-pointer group">
+<div class="aspect-video overflow-hidden mb-8">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Portrait of a young woman textile artist, vibrant indigo fabrics, soft natural light, Niamey studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzUb3Qz57Q3jEV1lTlBY19u4sZ8cVSSo9Y5xAEpVAwmWG-upuGuZ0Eew-NI3SxmXbSzFpHryQLM62AWvUB8r7ze8w_Xuc3vELxgIZ-BCzS_s5-Ee2WsJF0CW2LqAp4Omxy3uVq3CtWcUdzTr4q5d1XX5Jvo68UKretnYfYZ3ekPss8kmpzI2iugbN4ylf6JY7uYRjwPpiC7S2UoiGXQJmIYlrYwUpaz7fA6efNGrxDVaiyBp4tSFj1-AC1l9LwOXSDjybPuUgFronS"/>
+</div>
+<span class="font-space-grotesk text-xs text-primary font-bold uppercase">Septembre 2024</span>
+<h5 class="font-epilogue text-2xl font-bold mt-2">Le tissage de la résilience à Zinder</h5>
+<p class="font-body text-sm text-on-surface-variant mt-4">Comment Amina a transformé une tradition familiale en un moteur de changement...</p>
+</div>
+</div>
+<!-- Asymmetrical Story Card 2 -->
+<div class="col-start-1 col-end-6 row-start-2 -mt-20">
+<div class="bg-surface-container-lowest p-8 shadow-2xl -rotate-6 hover:rotate-0 transition-transform duration-700 cursor-pointer group">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="auto_stories">auto_stories</span>
+<h5 class="font-epilogue text-3xl font-black mt-2 uppercase">L'Écho des Tambours</h5>
+<p class="font-body text-on-surface-variant mt-4 leading-relaxed">Un voyage sonore à travers les villages bordant le fleuve Niger, capturant la joie pure de la musique communautaire.</p>
+<div class="mt-8 flex gap-4 overflow-hidden">
+<img class="w-24 h-24 object-cover" data-alt="Close up of hands playing traditional drums, motion blur, warm lighting, high energy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGhWxghuOd5Hdvm4W_QUY1T-foipXAge8gpOJQBnMzNaxURgslUT7UF17tWmHMtX3AWrdHj4EkRZtVgEXPVCbxuw_QeQqYv_5rkqMd7KBZwJTY2LhzT4_MVJQwsAG8KBr7QFW-1WYJqNcd3EWFQHnMklGdKnngKCsjAgMRbI-TgoXU2q3ES1A1sRRJ8ommGnx_Ara6fA5SgjKbfDdkZzWQ7i9Thgr7EjZZ39uZOIJbQF_xjzCKls7U0lVJhqUpY6NUMq856fyHckOz"/>
+<img class="w-24 h-24 object-cover" data-alt="Crowd dancing in dusty sunset light, silhouettes, vibrant atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB8VxFMTmk0sKs9KpwkYHysbQcRvn2K3Td4ofpkwsTDrX6T1HUPEwf64mHBghja8MJOBtmGuUYZix7hoc91og8jruMY-WBtMpgniZON5QcyY3_FLFykHLt_XVuvPm0cqJz6qGT6sOb0ooAvkMLNWoeMVj6n5uRTjM6btj5w1CHYzd7opt1KOH_KwwwaGeFy0FEJaNUeXcjioKNFBzeZ5aQXcpvTkoI1eWA45Z2NrpFJhbkPGJD_PHFudtG5J8Aqb_9r0pgkHkij5HK"/>
+</div>
+</div>
+</div>
+<!-- Asymmetrical Story Card 3 -->
+<div class="col-start-8 col-end-13 row-start-2 mt-40">
+<div class="bg-surface-container-lowest p-4 shadow-xl rotate-12 hover:rotate-0 transition-transform duration-700 cursor-pointer group">
+<img class="w-full h-64 object-cover" data-alt="Aerial view of a brightly painted school building in a desert landscape, geometric patterns, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdoLBKCQrhsIfSYNTHMQFXK8YJedZ9CUKZnqXujnddPPy7xoIYQdoyi7cP9IOLQTJ1L_gHOBZGihH8ZYDDPWX1LCVwkWwb2RAXG9rfgedyIGLm_6zHJ93Im2-LkJ1c1cdV67u86vsf1NJRokIQflwLw7NrkyY9poX-JsiC-VF9ocVmdGkfNExpHTmucYzxCyn8cuglzFYUrvkJfeBLZsX60eQxKpKFAgVYAVyzRP3CkQafNQvb67lMp4HUFYsSceVyGCaSVpkvJdNK"/>
+<div class="p-4">
+<h5 class="font-epilogue font-bold">L'Architecture du Sourire</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER (Shared Component Implementation & Specific Style) -->
+<footer class="relative w-full min-h-[819px] flex flex-col justify-end bg-blue-600 dark:bg-blue-900 text-white w-full px-10 pb-20 pt-40 flex flex-col items-center overflow-hidden">
+<!-- Massive Kinetic Title -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+<span class="font-epilogue text-[40vw] font-black uppercase leading-none select-none">Niger</span>
+</div>
+<div class="relative z-10 w-full text-center">
+<h2 class="font-epilogue text-[15vw] leading-none uppercase font-black tracking-tighter mb-20 mix-blend-overlay">SOUTENIR</h2>
+<div class="flex flex-col md:flex-row justify-between items-end w-full gap-12">
+<div class="text-left">
+<div class="text-white font-black uppercase text-4xl mb-6">Les Fabricants</div>
+<p class="font-inter text-blue-200 opacity-80 max-w-sm">Une plateforme dédiée à la propulsion de la culture et de l'innovation sociale au Niger.</p>
+</div>
+<div class="flex gap-12 text-right">
+<div class="flex flex-col gap-2">
+<span class="font-space-grotesk text-xs uppercase tracking-widest text-orange-400 font-bold mb-2">Navigation</span>
+<a class="text-blue-200 opacity-80 hover:text-white hover:scale-105 transition-transform duration-700 font-inter" href="#">Le Manifeste</a>
+<a class="text-orange-400 font-bold underline transition-transform duration-700 font-inter" href="#">Missions</a>
+<a class="text-blue-200 opacity-80 hover:text-white hover:scale-105 transition-transform duration-700 font-inter" href="#">Histoires</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-space-grotesk text-xs uppercase tracking-widest text-orange-400 font-bold mb-2">Légal</span>
+<a class="text-blue-200 opacity-80 hover:text-white transition-all font-inter" href="#">Mentions Légales</a>
+<a class="text-blue-200 opacity-80 hover:text-white transition-all font-inter" href="#">Presse</a>
+<a class="text-blue-200 opacity-80 hover:text-white transition-all font-inter" href="#">Partenariats</a>
+</div>
+</div>
+</div>
+<div class="mt-24 pt-8 border-t border-white/10 w-full flex justify-between items-center">
+<p class="font-inter text-xs opacity-60">© 2024 Les Fabricants de Joie du Niger. Conçu par le Sahel.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-white opacity-60 hover:opacity-100 cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-white opacity-60 hover:opacity-100 cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+</footer>
+</main>
+<!-- FLOATING CTA (Contextual) -->
+<div class="fixed bottom-12 right-12 z-[110]">
+<button class="w-24 h-24 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-epilogue font-black text-xs uppercase tracking-tighter leading-none text-center shadow-[0_40px_80px_rgba(25,28,30,0.15)] hover:scale-110 transition-transform duration-500 hover:rotate-12">
+            Donner<br/>Maintenant
+        </button>
+</div>
+</body></html>
