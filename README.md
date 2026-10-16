@@ -1,7 +1,10 @@
 # Site Web Officiel des Fabricants de Joie (FJ Niger)
 
 > **Projet :** `site_web_des_fj_niger`  
+> **Production URL :** [https://fj-niger.vercel.app](https://fj-niger.vercel.app)  
 > Plateforme web immersive et moderne pour l'ONG **Les Fabricants de Joie du Niger (FJ Niger)** — Propulser la culture, l'autonomie, l'art et l'impact social au Niger depuis 1976.
+
+![Hero Showcase](portfolio-screenshots/01-home-hero.png)
 
 ---
 
