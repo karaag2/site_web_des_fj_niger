@@ -115,10 +115,14 @@ export const getPostBySlug = async (slug: string, currentUserId?: string, update
   }
 
   if (updateViewCount) {
-    await prisma.post.update({
-      where: { slug },
-      data: { views: { increment: 1 } },
-    });
+    try {
+      await prisma.post.update({
+        where: { slug },
+        data: { views: { increment: 1 } },
+      });
+    } catch (err) {
+      console.warn(`[Views] Failed to increment view count for post "${slug}":`, err);
+    }
   }
 
   return post;

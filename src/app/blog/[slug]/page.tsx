@@ -50,11 +50,15 @@ export default async function ArticlePage({
 
   if (!post) notFound();
 
-  // Increment views
-  await prisma.post.update({
-    where: { slug },
-    data: { views: { increment: 1 } },
-  });
+  // Safely increment views (non-blocking in read-only environments like Vercel with local SQLite)
+  try {
+    await prisma.post.update({
+      where: { slug },
+      data: { views: { increment: 1 } },
+    });
+  } catch (err) {
+    console.warn(`[Views] Failed to increment view count for post "${slug}":`, err);
+  }
 
   // Related posts (same category, excluding current)
   const relatedPosts = await prisma.post.findMany({
