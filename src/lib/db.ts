@@ -19,6 +19,7 @@ function getDatabaseUrl() {
 function createPrismaClient() {
   const adapter = new PrismaLibSql({
     url: getDatabaseUrl(),
+    authToken: process.env.TURSO_AUTH_TOKEN || undefined,
   });
   return new PrismaClient({ adapter });
 }
